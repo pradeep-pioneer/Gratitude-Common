@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Gratitude.App">
+	<Application.Resources>
+		<!-- Application resource dictionary -->
+        <ResourceDictionary>
+            <Color x:Key="backgroundColor">#3b5998</Color>
+            <Color x:Key="barBackgroundColor">#f39c11</Color>
+            <Color x:Key="prominantBackgroundColor">#f3ab3f</Color>
+            <Style TargetType="StackLayout">
+                <Setter Property="Spacing" Value="6"/>
+                <Setter Property="Margin" Value="0"/>
+                <Setter Property="Padding" Value="5"/>
+                <Setter Property="BackgroundColor" Value="{StaticResource prominantBackgroundColor}"/>
+            </Style>
+            <Style TargetType="Button">
+                <Setter Property="BackgroundColor" Value="{StaticResource backgroundColor}"/>
+                <Setter Property="BorderColor" Value="White"/>
+                <Setter Property="BorderWidth" Value="2"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property ="Margin" Value="5,0,5,0"/>
+            </Style>
+        </ResourceDictionary>
+	</Application.Resources>
+</Application>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Gratitude.DailyReflectionsPage" x:Name="dailyReflectionsPage">
+    <ContentPage.Content>
+	<StackLayout Spacing="6" Margin="0" BackgroundColor="#f3ab3f">
+        <ActivityIndicator x:Name="activityIndicatorReflectionLoading" IsVisible="{Binding Source={x:Reference dailyReflectionsPage}, Path = IsLoading}" IsRunning="{Binding Source={x:Reference dailyReflectionsPage}, Path = IsLoading}"></ActivityIndicator>
+        <WebView x:Name="webViewReflectionBrowser"
+        HeightRequest="1000"
+        Source="{Binding Source={x:Reference dailyReflectionsPage}, Path = Url}"
+        WidthRequest="1000"></WebView>
+    </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

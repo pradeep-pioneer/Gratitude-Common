@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:Gratitude" x:Class="Gratitude.GratitudePage">
+	<!--<Label Text="Welcome to Xamarin Forms!" VerticalOptions="Center" HorizontalOptions="Center" />-->
+    <!--ToDo: Implament the Binding for Visibility of Loader-->
+    <StackLayout>
+        <Button
+        Text="Daily Reflection"
+        x:Name="buttonDailyReflection"
+        IsVisible="{Binding IsLoading}"
+        IsEnabled="{Binding IsLoading}"/>
+        <Button
+        Text="Find Meeting"
+        x:Name="buttonFindMeeting"
+        IsVisible="{Binding IsLoading}"
+        IsEnabled="{Binding IsLoading}"/>
+        <Button
+        Text="Browse Meetings"
+        x:Name="buttonBrowseMeetings"
+        IsVisible="{Binding IsLoading}"
+        IsEnabled="{Binding IsLoading}"/>
+        <Button
+        Text="Contact Us"
+        x:Name="buttonContactUs"
+        IsVisible="{Binding IsLoading}"
+        IsEnabled="{Binding IsLoading}"/>
+        <ActivityIndicator x:Name="activityIndicatorDataFetch"
+        IsEnabled="{Binding IsLoading}"
+        IsRunning="{Binding IsLoading}"
+        IsVisible="{Binding IsLoading}"/>
+        <ScrollView>
+            <Label
+            x:Name="labelQuote"
+            HorizontalTextAlignment="Center"
+            TextColor="Black"
+            Text="It works..."/>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>
